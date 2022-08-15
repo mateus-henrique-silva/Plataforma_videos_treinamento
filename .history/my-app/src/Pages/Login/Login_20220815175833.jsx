@@ -6,11 +6,10 @@ const Login = () => {
     <>
       <div className="backgound-one">
         <div className="box-login">
-        <form className="formLogin">
+            for
           <input type="text" />
           <input type="text" />
           <input type="text" />
-          </form>
         </div>
       </div>
     </>

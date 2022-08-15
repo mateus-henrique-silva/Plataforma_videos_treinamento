@@ -14,21 +14,11 @@ border-radius: 70px;
 align-items: center;
 }
 
-.box-login .formLogin input{ 
-    width: 320px;
-    height: 28px;
-    margin-bottom: 0;
-    bottom: 0;
-   
-    
-    border: 2px solid #FFFFFF;
-    border-radius: 15px;
-
+.box-login input{ 
+    height: 20px;
 }
 
 .box-login .formLogin{
-    height:100%;
-justify-content:center;
-align-items: center;
+    height:250%;
     display: grid;
 }

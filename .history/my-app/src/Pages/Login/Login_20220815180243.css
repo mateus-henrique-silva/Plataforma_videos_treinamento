@@ -15,10 +15,8 @@ align-items: center;
 }
 
 .box-login .formLogin input{ 
-    width: 320px;
-    height: 28px;
-    margin-bottom: 0;
-    bottom: 0;
+    width: 520px;
+    height: 68px;
    
     
     border: 2px solid #FFFFFF;
@@ -27,8 +25,6 @@ align-items: center;
 }
 
 .box-login .formLogin{
-    height:100%;
-justify-content:center;
-align-items: center;
+    height:35%;
     display: grid;
 }

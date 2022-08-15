@@ -1,0 +1,16 @@
+.backgound-one{
+    width:100vw;
+    height:100vh;
+    background: url("../../Assets//ImageBackground/Rectangle.png") fixed center no-repeat;
+}
+
+
+.box-login{
+width: 300px;
+height: 673px;
+left: 914px;
+top: 222px;
+
+background: rgba(255, 255, 255, 0.22);
+border-radius: 70px;
+}

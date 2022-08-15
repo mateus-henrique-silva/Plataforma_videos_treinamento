@@ -6,7 +6,7 @@ const Login = () => {
     <>
       <div className="backgound-one">
         <div className="box-login">
-        <form className="formLogin">
+        <form className="">
           <input type="text" />
           <input type="text" />
           <input type="text" />

@@ -5,12 +5,8 @@ const Login = () => {
   return (
     <>
       <div className="backgound-one">
-        <div className="box-login">
-        <form className="formLogin">
+        <div cla>
           <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          </form>
         </div>
       </div>
     </>
