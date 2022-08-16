@@ -1,0 +1,20 @@
+.backgound-one{
+    width:100vw;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-around;
+    display:flex;
+    background: url("../../Assets//ImageBackground/Rectangle.png") fixed center no-repeat;
+}
+
+
+img{
+    width:250px;
+}
+
+.logoPrincipal p{
+    width: 80%;
+    color: white;
+    font-size:25px;
+}

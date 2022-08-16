@@ -1,0 +1,9 @@
+.backgound-one{
+    width:100vw;
+    height:100vh;
+    ali
+    display:flex;
+    background: url("../../Assets//ImageBackground/Rectangle.png") fixed center no-repeat;
+}
+
+

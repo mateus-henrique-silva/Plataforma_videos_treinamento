@@ -1,0 +1,62 @@
+.box-login {
+  width: 350px;
+  height: 370px;
+  display: grid;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-login .formLogin input[type="text"], [type="passw"] {
+  width: 270px;
+  height: 35px;
+  margin-bottom: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding-left: 15px;
+ background:transparent;
+ color: #ffffff;
+}
+.box-login .formLogin input::placeholder {
+    color: #ffffff;
+  }
+.box-login .formLogin {
+  height: 100%;
+  width: 350px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.box-login .formLogin a{
+    color: black;
+    margin-top: -40px;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.box-login .formLogin a:last-child{
+    color: white;
+    margin-top: -40px;
+    display:flex;
+    justify-content:center;
+}
+
+.box-login .formLogin h1 {
+    text-align: center;
+  }
+.box-login .formLogin input[type="submit"] {
+    width: 180px;
+    height: 35px;
+    margin-bottom: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    background: #C91111;
+   color: #ffffff;
+  }

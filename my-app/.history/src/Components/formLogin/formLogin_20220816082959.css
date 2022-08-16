@@ -1,0 +1,26 @@
+.box-login {
+  width: 350px;
+  height: 350px;
+  display: grid;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 70px;
+  align-items: center;
+}
+
+.box-login .formLogin input {
+  width: 270px;
+  height: 35px;
+  margin-bottom: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+ background:transparent;
+}
+
+.box-login .formLogin {
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
