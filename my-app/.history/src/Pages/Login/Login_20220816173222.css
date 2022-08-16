@@ -19,7 +19,7 @@
          justify-content:space-around;
          display:flex;
          flex-direction:column;
-         background: url("../../Assets//ImageBackground/Rectangle.png") center no-repeat;
+         background: url("../../Assets//ImageBackground/Rectangle.png") fixed center no-repeat;
      }
      .logoPrincipal p{
         width: 100%!important;
