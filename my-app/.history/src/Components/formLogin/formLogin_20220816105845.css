@@ -9,12 +9,7 @@
   align-items: center;
 }
 
-@media(max-width:999px){
-    .boxFather{
-        width:100vw;
-        display: flex;
-        justify-content: center;
-    }
+@media(){
     
 }
 .boxFather{

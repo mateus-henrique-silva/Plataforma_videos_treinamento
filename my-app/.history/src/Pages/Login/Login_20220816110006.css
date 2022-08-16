@@ -16,24 +16,9 @@
          align-items:center;
          justify-content:center;
          justify-content:space-around;
-         display:grid;
+         display:gr;
          background: url("../../Assets//ImageBackground/Rectangle.png") fixed center no-repeat;
      }
-     .logoPrincipal p{
-        width: 100%!important;
-        margin-left:0px!important;
-        text-align: center;
-        color: white;
-        margin: 20px;
-        font-size:25px!important;
-    }
-    .logoPrincipal{
-        display: grid;
-        width: 100vw;
-        justify-content: center;
-    
-    
-    }
 }
 
 

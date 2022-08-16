@@ -20,12 +20,11 @@
          background: url("../../Assets//ImageBackground/Rectangle.png") fixed center no-repeat;
      }
      .logoPrincipal p{
-        width: 100%!important;
-        margin-left:0px!important;
+        width: 100%;
+        margin-left:0px;
         text-align: center;
         color: white;
-        margin: 20px;
-        font-size:25px!important;
+        font-size:35px;
     }
     .logoPrincipal{
         display: grid;
