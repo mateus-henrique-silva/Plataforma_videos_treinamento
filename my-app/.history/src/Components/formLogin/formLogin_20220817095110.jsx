@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./formCreate.css";
 import "./formLogin.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Api from "../../Services/Api/Api";
 
 const FormLogin = () => {
   // const urlDirect = `http://localhost/${}`
@@ -9,14 +10,10 @@ const FormLogin = () => {
   const [pass, setPass] = useState("");
   const [code, setCode] = useState("");
   const [passRepete, setPassRepete] = useState("");
-  const setUrl = window.location.href;
+
   function redirectToHome() {
     if (email == "teste" && pass == "1234") {
-      // let stateObj = { id: "100" };
-
-      
-    //  return console.log(setUrl)
-     window.location.href =`${setUrl}teste`;
+      window.location.href("http://localhost:3001/teste");
     } else {
       alert("erro");
     }
@@ -51,16 +48,12 @@ const FormLogin = () => {
             value={pass}
             onChange={(e) => {
               setPass(e.target.value);
-            }}
+            }} 
           />
           <Link to="/">Esqueci minha senha</Link>
           <input type="button" value="Login" onClick={redirectToHome} />
           <p
-            style={{
-              textDecoration: "underline",
-              cursor: "pointer",
-              margin: "5px",
-            }}
+            style={{ textDecoration: "underline", cursor: "pointer", margin:"5px" }}
             onClick={fadeEffect}
           >
             Criar conta
@@ -72,7 +65,7 @@ const FormLogin = () => {
         </form>
 
         <form id="formCr" className="formCreate">
-          <h1>Cadastro</h1>
+          <h1>Acesso</h1>
           <input
             type="text"
             required
@@ -109,15 +102,8 @@ const FormLogin = () => {
               setCode(e.target.value);
             }}
           />
-          <input type="button" value="Cadastrar" onClick={redirectToHome} />
-          <p
-            style={{
-              textDecoration: "underline",
-              cursor: "pointer",
-              margin: "10px",
-            }}
-            onClick={fadeEffect}
-          >
+          <input type="button" value="Login" onClick={redirectToHome}  />
+          <p style={{ textDecoration: "underline", cursor: "pointer", margin:"10px" }}  onClick={fadeEffect}>
             Voltar a tela de login
           </p>{" "}
         </form>

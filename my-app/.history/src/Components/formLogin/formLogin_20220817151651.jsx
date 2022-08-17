@@ -3,20 +3,18 @@ import "./formCreate.css";
 import "./formLogin.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+
 const FormLogin = () => {
   // const urlDirect = `http://localhost/${}`
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [code, setCode] = useState("");
   const [passRepete, setPassRepete] = useState("");
-  const setUrl = window.location.href;
+  
+
   function redirectToHome() {
     if (email == "teste" && pass == "1234") {
-      // let stateObj = { id: "100" };
-
-      
-    //  return console.log(setUrl)
-     window.location.href =`${setUrl}teste`;
+      return window.history.pushState("object or string", "Title", "/new-url");
     } else {
       alert("erro");
     }
@@ -51,16 +49,12 @@ const FormLogin = () => {
             value={pass}
             onChange={(e) => {
               setPass(e.target.value);
-            }}
+            }} 
           />
           <Link to="/">Esqueci minha senha</Link>
           <input type="button" value="Login" onClick={redirectToHome} />
           <p
-            style={{
-              textDecoration: "underline",
-              cursor: "pointer",
-              margin: "5px",
-            }}
+            style={{ textDecoration: "underline", cursor: "pointer", margin:"5px" }}
             onClick={fadeEffect}
           >
             Criar conta
@@ -109,18 +103,12 @@ const FormLogin = () => {
               setCode(e.target.value);
             }}
           />
-          <input type="button" value="Cadastrar" onClick={redirectToHome} />
-          <p
-            style={{
-              textDecoration: "underline",
-              cursor: "pointer",
-              margin: "10px",
-            }}
-            onClick={fadeEffect}
-          >
+          <input type="button" value="Cadastrar" onClick={redirectToHome}  />
+          <p style={{ textDecoration: "underline", cursor: "pointer", margin:"10px" }}  onClick={fadeEffect}>
             Voltar a tela de login
           </p>{" "}
         </form>
+        
       </div>
     </div>
   );

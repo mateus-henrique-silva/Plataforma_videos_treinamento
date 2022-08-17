@@ -1,39 +1,24 @@
 import React, { useState } from "react";
-import "./formCreate.css";
 import "./formLogin.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Api from "../../Services/Api/Api";
 
 const FormLogin = () => {
   // const urlDirect = `http://localhost/${}`
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
-  const [code, setCode] = useState("");
-  const [passRepete, setPassRepete] = useState("");
-  const setUrl = window.location.href;
+
   function redirectToHome() {
     if (email == "teste" && pass == "1234") {
-      // let stateObj = { id: "100" };
-
-      
-    //  return console.log(setUrl)
-     window.location.href =`${setUrl}teste`;
+      window.location.href("http://localhost:3001/teste");
     } else {
       alert("erro");
     }
   }
-
-  const fadeEffect = () => {
-    const elementFade = document.getElementById("formFade");
-    const elementCreate = document.getElementById("formCr");
-    elementFade.classList.toggle("fadeIn");
-    elementCreate.classList.toggle("formCr");
-
-    // return console.log(elementFade);
-  };
   return (
     <div className="boxFather">
       <div className="box-login">
-        <form id="formFade" className="formLogin">
+        <form className="formLogin">
           <h1>Acesso</h1>
           <input
             type="text"
@@ -54,15 +39,8 @@ const FormLogin = () => {
             }}
           />
           <Link to="/">Esqueci minha senha</Link>
-          <input type="button" value="Login" onClick={redirectToHome} />
-          <p
-            style={{
-              textDecoration: "underline",
-              cursor: "pointer",
-              margin: "5px",
-            }}
-            onClick={fadeEffect}
-          >
+          <input type="button" Value="Login" onClick={redirectToHome} />
+          <p style={{ textDecoration: "underline", cursor: "pointer" }}>
             Criar conta
           </p>{" "}
           <div className="boxCenterCheck">
@@ -71,8 +49,9 @@ const FormLogin = () => {
           </div>
         </form>
 
-        <form id="formCr" className="formCreate">
-          <h1>Cadastro</h1>
+
+        <form className="formCreate">
+          <h1>Acesso</h1>
           <input
             type="text"
             required
@@ -91,35 +70,15 @@ const FormLogin = () => {
               setPass(e.target.value);
             }}
           />
-          <input
-            type="password"
-            placeholder="Repetir Senha"
-            required
-            value={passRepete}
-            onChange={(e) => {
-              setPassRepete(e.target.value);
-            }}
-          />
-          <input
-            type="password"
-            placeholder="Código do cliente"
-            required
-            value={code}
-            onChange={(e) => {
-              setCode(e.target.value);
-            }}
-          />
-          <input type="button" value="Cadastrar" onClick={redirectToHome} />
-          <p
-            style={{
-              textDecoration: "underline",
-              cursor: "pointer",
-              margin: "10px",
-            }}
-            onClick={fadeEffect}
-          >
-            Voltar a tela de login
+          <Link to="/">Esqueci minha senha</Link>
+          <input type="button" Value="Login" onClick={redirectToHome} />
+          <p style={{ textDecoration: "underline", cursor: "pointer" }}>
+            Criar conta
           </p>{" "}
+          <div className="boxCenterCheck">
+            <input type="checkbox" />
+            <label style={{ marginLeft: "8px" }}>Lembre de mim</label>
+          </div>
         </form>
       </div>
     </div>

@@ -9,14 +9,12 @@ const FormLogin = () => {
   const [pass, setPass] = useState("");
   const [code, setCode] = useState("");
   const [passRepete, setPassRepete] = useState("");
-  const setUrl = window.location.href;
+
   function redirectToHome() {
     if (email == "teste" && pass == "1234") {
-      // let stateObj = { id: "100" };
+      let stateObj = { id: "100" };
 
-      
-    //  return console.log(setUrl)
-     window.location.href =`${setUrl}teste`;
+      window.history.pushState(stateObj, "Page 2", "/page2.html");
     } else {
       alert("erro");
     }

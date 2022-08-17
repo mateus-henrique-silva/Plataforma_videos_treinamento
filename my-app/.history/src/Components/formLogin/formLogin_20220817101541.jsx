@@ -9,14 +9,19 @@ const FormLogin = () => {
   const [pass, setPass] = useState("");
   const [code, setCode] = useState("");
   const [passRepete, setPassRepete] = useState("");
-  const setUrl = window.location.href;
+  const db = getFirestore(firebaseApp);
+  const collectionUsers = collection(db, "users");
+  async function createUser() {
+    const user = await addDoc(collectionUsers, { name, email });
+    console.log(user);
+    // document.location.reload(true);
+    window.location.href =
+      "https://contato.liderbrasilinformatica.com.br/concluido";
+  }
+
   function redirectToHome() {
     if (email == "teste" && pass == "1234") {
-      // let stateObj = { id: "100" };
-
-      
-    //  return console.log(setUrl)
-     window.location.href =`${setUrl}teste`;
+      window.location.href("http://localhost:3001/teste");
     } else {
       alert("erro");
     }

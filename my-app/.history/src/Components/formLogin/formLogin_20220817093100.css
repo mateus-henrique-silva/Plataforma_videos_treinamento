@@ -63,7 +63,6 @@
 .box-login .formLogin {
   height: 100%;
   width: 100%;
-  animation: fade 0.5s ease ;
   color: #ffffff;
   justify-content: center;
   align-items: center;
@@ -131,18 +130,14 @@
   opacity: 0 !important;
   display: none !important;
   /* position: relative; */
-  
+  animation: fade 0.8s!important;
 }
-
-
-
 
 @keyframes fade {
   0%{
     opacity: 0;
   }
- 
-  100% {
+  to {
     opacity: 1;
   }
 }
