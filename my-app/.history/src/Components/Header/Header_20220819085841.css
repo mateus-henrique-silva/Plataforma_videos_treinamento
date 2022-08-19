@@ -1,0 +1,11 @@
+svg{
+   color: white!important;
+}
+
+
+.flex-box-header{
+    justify-content: center;
+    display:flex;
+    justify-content:space-around;
+  
+}

@@ -1,0 +1,38 @@
+.ListaCursosMain{
+    width: 50%;
+    margin: 20px;
+  
+
+}
+.ListaCursosMain h2{
+   font-size:22px;
+   
+
+}
+@media(max-width:800px){
+    .ListaCursosMain{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        margin: 20px;
+    
+    }
+    .ListaCursosMain h2{
+        font-size:22px;
+        text-align: center;
+        width:100%;
+     
+     }
+}
+
+.ListaImgCursos {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+}
+.ListaImgCursos li{
+    border-radius: 50%;
+    background:black;
+    width: 150px;
+    height: 150px;
+}

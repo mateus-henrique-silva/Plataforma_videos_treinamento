@@ -1,0 +1,23 @@
+.boxPorcentagemMain{
+    width:40%;
+    display:grid;
+    flex-direction: column;
+    justify-content:center!important;
+    margin: 20px;
+    margin-ri
+    text-align: center;
+}
+.boxPorcentagemMain h1{
+ margin-bottom:20px;
+ font-size: 32px;
+ width:100%;
+}
+@media(max-width:800px){
+    .boxPorcentagemMain{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        margin: 20px;
+    
+    }
+}

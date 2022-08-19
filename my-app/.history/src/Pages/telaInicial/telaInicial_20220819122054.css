@@ -1,0 +1,6 @@
+.box-main{
+    display: inline;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

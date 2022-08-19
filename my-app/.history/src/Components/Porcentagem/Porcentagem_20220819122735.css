@@ -1,0 +1,14 @@
+.boxPorcentagemMain{
+    width:40%;
+    margin: 20px;
+}
+
+@media(max-width:800px){
+    .boxPorcentagemMain{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+        margin: 20px;
+    
+    }
+}
