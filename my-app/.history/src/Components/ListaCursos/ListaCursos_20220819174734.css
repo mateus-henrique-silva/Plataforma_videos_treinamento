@@ -12,7 +12,6 @@
 @media(max-width:800px){
     .ListaCursosMain{
         width: 100%;
-        margin: 0px!important;
         display: flex;
         flex-direction: column;
         justify-content:center;
@@ -20,11 +19,9 @@
     
     }
     .ListaCursosMain h2{
-        margin-top:20px;
-        margin-bottom: 25px;
-        margin-left:0;
+      
         font-size:22px;
-        text-align: center;
+ 
         width:100%;
      
      }
@@ -32,7 +29,7 @@
 
 .ListaImgCursos {
     overflow: auto;
-    width:100%;
+    width:80%;
   scroll-behavior: smooth;
     white-space: nowrap;
    

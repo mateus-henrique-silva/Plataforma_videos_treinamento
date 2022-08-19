@@ -9,7 +9,7 @@ const Porcentagem = () => {
     <div className="boxPorcentagemMain">
       <h1>Meu aprendizado</h1>
       
-        <CircularProgressbar value={66} text={"66%"} />
+        <CircularProgressbar value={66} color={} text={"66%"} />
       
     </div>
   );
